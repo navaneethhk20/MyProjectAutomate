@@ -27,6 +27,11 @@ driver.findElement(By.id("LoginButton")).click();
 driverWait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("My Replicon"))).click();
 driver.findElement(By.linkText("Expenses")).click();
 driver.findElement(By.id("addNewExpenseButton")).click();
+driverWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("expenseDescription"))).sendKeys("test4123");
+driver.findElement(By.id("date_n0")).sendKeys("Test1");
+driver.findElement(By.id("description_n0")).sendKeys("Test123");
+driver.findElement(By.id("amount_n0")).sendKeys("1213");
+driver.findElement(By.id("button_11")).click();
 		
 	}
 

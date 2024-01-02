@@ -26,7 +26,7 @@ driver.findElement(By.id("LoginButton")).click();
 driverWait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("My Replicon"))).click();
 driver.findElement(By.linkText("Time Off")).click();
 driverWait.until(ExpectedConditions.visibilityOfElementLocated(By.name("book-timeoff-btn"))).click();
-//driverWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("timeOffSubmit"))).click();
+driverWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("timeOffSubmit"))).click();
 	
 	}
 

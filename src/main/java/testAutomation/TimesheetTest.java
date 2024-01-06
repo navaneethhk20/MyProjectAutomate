@@ -27,6 +27,7 @@ public class TimesheetTest {
 	    driverWait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("My Replicon"))).click();
 	    driverWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("add-new-timeline"))).click();
 	    driverWait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input#duration"))).sendKeys("8");
+	    driver.close();
 	}
 
 }
